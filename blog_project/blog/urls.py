@@ -6,5 +6,9 @@ urlpatterns = [
     url(r'^$', views.PostListView.as_view(), name='post_list'),
     url(r'^about/$', views.AboutView.as_view(), name='about'),
     url(r'^post/(?P<pk>\d+)$', views.PostDetailView.as_view(), name='post'),  # its grab a PK and get all his info
-    url(r'post/new/$', views.CreatePostView.as_view(), name='post_new')  # go to PostForm
+    url(r'^post/new/$', views.CreatePostView.as_view(), name='post_new'),  # go to PostForm
+    url(r'^post/(?P<pk>\d+)$/edit/$', views.PostUpdateView.as_view(), name='edit_post'),
+    url(r'^post/(?P<pk>\d+)$/remove/$', views.PostDeleteView.as_view(), name='remove'),
+    url(r'^drafts/$', views.DraftListView.as_view(), name='post_drafts_list'),
+
 ]
