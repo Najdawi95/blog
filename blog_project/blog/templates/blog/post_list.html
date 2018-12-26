@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="jumbotron m-auto">
+        {% for post in all_post %}
+            <div class="post">
+                <h1><a href="{% url 'post_detail' pk=post.pk %}"></a></h1>
+                <div class="date">
+                    <p>Published on: {{post.published|date:"D M Y"}}</p>
+                </div>
+                <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approve_comments.count }}</a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

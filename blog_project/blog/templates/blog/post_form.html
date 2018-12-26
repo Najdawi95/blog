@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="jumbotron">
+        <h1>New Post</h1>
+        <form class="post-form" method="POST"> <!-- no need to use action because we use django form for it-->
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Save</button>
+        </form>
+
+        {# mediaum editor #}
+        <script>
+            var editor = new MediumeEditor('.editable');
+        </script>
+    </div>
+{% endblock %}

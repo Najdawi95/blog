@@ -26,7 +26,7 @@ class PostListView(ListView):  # return data from post model.
 
 class PostDetailView(DetailView):  # return details about the post specified by PK.
     model = Post
-    context_object_name = 'post_detail'
+    # context_object_name = 'post_detail'
 
 
 class CreatePostView(LoginRequiredMixin, CreateView):
@@ -57,7 +57,7 @@ class DraftListView(ListView):  # return data from post model.
     login_url = '/login/'
     redirect_field_name = 'blog/post_list.html'
     model = Post
-    context_object_name = 'all_post'
+    context_object_name = 'all_draft_post'
 
     def get_queryset(self):
         return Post.objects.filter(published_date__isnull=True).order_by('create_date')
@@ -71,6 +71,7 @@ def post_publish(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.publish()
     return redirect('post_detail', pk=pk)
+
 
 @login_required()
 def add_comment_to_post(request, pk):
