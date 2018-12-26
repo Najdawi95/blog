@@ -121,3 +121,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Login redirect - after login go to default url
 LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'

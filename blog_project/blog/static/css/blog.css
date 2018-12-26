@@ -1,5 +1,8 @@
 .techfont {
     font-family: 'Russo One', sans-serif;
     font-size: 1.5em;
-    margin-bottom: 10px;
+}
+
+.techfont-2{
+    font-family: 'Russo One', sans-serif;
 }
