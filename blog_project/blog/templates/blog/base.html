@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load staticfiles %}
+{% load compress %}
 <html lang="en">
 <head>
     <title>Blog</title>
@@ -26,9 +27,21 @@
           type="text/css" media="screen" charset="utf-8">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+{#    <link rel="stylesheet" href="{% static 'css/blog.css' %}">#}
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
+
+    <!-- compress less -->
+    {% if debug %}
+        <link rel="stylesheet" type="text/less" media="all" href="{% static 'less/style.less' %}"/>
+        <script src="{% static 'js/less.min.js' %}"></script>
+    {% else %}
+        {% compress css %}
+            <link rel="stylesheet" type="text/less" media="all" href="{% static 'less/style.less' %}"/>
+        {% endcompress %}
+    {% endif %}
+
+
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-primary border-bottom border-dark mb-5">
@@ -80,11 +93,11 @@
 </nav>
 
 
- <div class="blog_posts container">
-       {% block content %}
+<div class="blog_posts container">
+    {% block content %}
 
-       {% endblock %}
- </div>
+    {% endblock %}
+</div>
 
 
 </body>
