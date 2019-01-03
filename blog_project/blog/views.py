@@ -9,6 +9,8 @@ from blog.forms import PostForm, CommentForm
 from django.urls import reverse_lazy
 from django.views.generic import (View, TemplateView, DetailView,
                                   ListView, DeleteView, CreateView, UpdateView)
+# for API
+import requests
 
 
 # Create your views here.
@@ -103,3 +105,19 @@ def comment_remove(requset, pk):
     post_pk = comment.post.pk  # we save it in extra variable because when we delete, it's cannot remember the post PK
     comment.delete()
     return redirect('post_detail', pk=post_pk)
+
+
+################################################
+#                test design template          #
+################################################
+class Test(TemplateView):
+    template_name = 'test.html'
+
+
+################################################
+#                API test template             #
+################################################
+def myapi(request):
+    response = requests.get('http://34.244.171.232/api/v1/product/?search=iphone&action_type=DB')
+    results = response.json()
+    return render(request, 'blog/myapi.html', {'results': results})

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="row shadow p-2 border ">
+        <div class="col-sm-11 col-6 "><b>iPhone</b> 97 results:</div>
+        <div class="col-sm-1 col-6 float-right">
+            <div class="d-none d-md-inline">
+                <a href="#"><i aria-hidden="true" class="fa fa-list-ul convert-to-list-view d-none"></i></a>
+                <a href="#"><i aria-hidden="true" class="fa fa-th-large convert-to-grid-view "></i></a>
+            </div>
+            {# <div><i class="fas fa-sort pr-1 pl-2"></i></div>#}
+        </div>
+    </div>
+    <div class="row pt-5">
+        <div class="col-12 product-row m-md-1 pt-2 pb-2">
+
+            <div class="row">
+                <!-- main-result-img -->
+                <div class="col-md-3 col-6">
+                    <img src="{% static 'images/xs-max.jpg' %}"
+                         class="main-result-img mw-100 m-2"
+                         alt="results-img">
+                </div>
+                <!-- /main-result-img -->
+
+                <!-- title next to main image on mobile view -->
+
+
+                <div class="col-md-9 col-12">
+                    <div class="col-12">
+                    <p>
+                        <b>Apple iPhone X, 4G LTE, 64GB, Space Grey</b>
+                    </p>
+                </div>
+                    <div class="col-12">
+                        <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/aswaq-logo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/souqlogo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/noon-logo.png' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 product-row m-md-1 pt-2 pb-2">
+
+            <div class="row">
+                <!-- main-result-img -->
+                <div class="col-md-3 col-6">
+                    <img src="{% static 'images/xs-max.jpg' %}"
+                         class="main-result-img mw-100 m-2"
+                         alt="results-img">
+                </div>
+                <!-- /main-result-img -->
+
+                <!-- title next to main image on mobile view -->
+
+
+
+
+                <div class="col-md-9 col-12">
+                    <div class="col-12">
+                    <p>
+                        <b>Apple iPhone X, 4G LTE, 64GB, Space Grey</b>
+                    </p>
+                </div>
+                    <div class="col-12">
+                        <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/aswaq-logo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/souqlogo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/noon-logo.png' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 product-row m-md-1 pt-2 pb-2">
+
+            <div class="row">
+                <!-- main-result-img -->
+                <div class="col-md-3 col-6">
+                    <img src="{% static 'images/xs-max.jpg' %}"
+                         class="main-result-img mw-100 m-2"
+                         alt="results-img">
+                </div>
+                <!-- /main-result-img -->
+
+                <!-- title next to main image on mobile view -->
+
+
+
+
+                <div class="col-md-9 col-12">
+                    <div class="col-12">
+                    <p>
+                        <b>Apple iPhone X, 4G LTE, 64GB, Space Grey</b>
+                    </p>
+                </div>
+                    <div class="col-12">
+                        <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/aswaq-logo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/souqlogo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/noon-logo.png' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-12 product-row m-md-1 pt-2 pb-2">
+
+            <div class="row">
+                <!-- main-result-img -->
+                <div class="col-md-3 col-6">
+                    <img src="{% static 'images/xs-max.jpg' %}"
+                         class="main-result-img mw-100 m-2"
+                         alt="results-img">
+                </div>
+                <!-- /main-result-img -->
+
+                <!-- title next to main image on mobile view -->
+
+
+
+
+                <div class="col-md-9 col-12">
+                    <div class="col-12">
+                    <p>
+                        <b>Apple iPhone X, 4G LTE, 64GB, Space Grey</b>
+                    </p>
+                </div>
+                    <div class="col-12">
+                        <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/aswaq-logo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/aswaq-logo.jpg' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                         <div class="row pb-3 click_item" onclick="location.href='{{ item.url }}';">
+                            <div class="col-md-2 col-6 logo-cell">
+                                <img src="{% static 'images/noon-logo.png' %}" class="mw-100"/>
+                            </div>
+                            <div class="col-md-4 col-6  m-auto font-weight-bold price-cell">
+                                <span>998SAR</span>
+
+                                <h6>off 33%</h6>
+
+                            </div>
+                            <div class="col-md-6 d-none d-md-block">
+                                <a href="#" rel=”noreferrer” class="btn btn-light btn-sm">Go
+                                    to
+                                    shop ></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

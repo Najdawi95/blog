@@ -1,0 +1,14 @@
+.techfont {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.5em;
+}
+.techfont-2 {
+  font-family: 'Russo One', sans-serif;
+}
+.product-row {
+  border-bottom: 1px solid #c4bdbd;
+}
+.product-row .main-result-img {
+  max-width: 230px;
+  max-height: 230px;
+}
