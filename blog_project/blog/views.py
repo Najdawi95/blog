@@ -107,5 +107,17 @@ def comment_remove(requset, pk):
     return redirect('post_detail', pk=post_pk)
 
 
+################################################
+#                test design template          #
+################################################
 class Test(TemplateView):
     template_name = 'test.html'
+
+
+################################################
+#                API test template             #
+################################################
+def myapi(request):
+    response = requests.get('http://34.244.171.232/api/v1/product/?search=iphone&action_type=DB')
+    results = response.json()
+    return render(request, 'blog/myapi.html', {'results': results})
