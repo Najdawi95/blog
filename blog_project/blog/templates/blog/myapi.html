@@ -5,10 +5,10 @@
         <h1>Myapi test</h1>
         {% for upc, data in results.items %}
             <div class="row pb-2">
-                <div class="col-3 border">
-                  <img src="{{ data.image }}" alt="product-image" width="100%" height="230px"/>
+                <div class="col-3 border shadow">
+                  <img src="{{ data.image }}" alt="product-image" class="mw-100" height="230px"/>
                 </div>
-                <div class="col-9 border bg-white">
+                <div class="col-9 border bg-white shadow">
                     <h3>{{ data.title }}</h3>
                 </div>
             </div>

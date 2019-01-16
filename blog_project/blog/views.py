@@ -50,7 +50,7 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
     model = Post
 
 
-class PostDeleteView(LoginRequiredMixin, DetailView):
+class PostDeleteView(LoginRequiredMixin, DeleteView):
     model = Post
     success_url = reverse_lazy('post_list')
 
